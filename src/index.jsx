@@ -16,8 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <ChakraProvider theme={theme}>
         <ParallaxProvider>
           <App />
-        </ParallaxProvider>
-      </ChakraProvider>
+        </ParallaxProvider>      </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );
