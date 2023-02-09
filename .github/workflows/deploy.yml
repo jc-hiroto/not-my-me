@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         uses: borales/actions-yarn@v4
         with:
-          cmd: install
+          cmd: install --prod
         env:
           VITE_GA4_ID: ${{ secrets.GA4_ID }}
 
