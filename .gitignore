@@ -1,8 +1,8 @@
 # mac
 .DS_Store
 
-# Dependency directories
 node_modules/
+.env
 
 # IDE
 .idea
