@@ -14,19 +14,25 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+        env:
+          VITE_GA4_ID: ${{ secrets.GA4_ID }}
 
       - name: Build project
-        run: npm run build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: production-files
           path: ./dist
@@ -39,7 +45,7 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
