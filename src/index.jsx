@@ -5,15 +5,14 @@ import theme from "./theme";
 import { ChakraProvider } from "@chakra-ui/react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { BrowserRouter } from "react-router-dom";
-import ReactGA from "react-ga4";
+// import ReactGA from "react-ga4";
 
 
-ReactGA.initialize(import.meta.env.VITE_GA4_ID);
-ReactGA.send("pageview");
+// ReactGA.initialize(import.meta.env.VITE_GA4_ID);
+// ReactGA.send("pageview");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
+  <React.StrictMode>    <BrowserRouter>
       <ChakraProvider theme={theme}>
         <ParallaxProvider>
           <App />
