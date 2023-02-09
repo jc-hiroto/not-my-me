@@ -12,12 +12,11 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {" "}
     <BrowserRouter>
       <ChakraProvider theme={theme}>
         <ParallaxProvider>
-          <App />{" "}
-        </ParallaxProvider>{" "}
+          <App />
+        </ParallaxProvider>
       </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>,
