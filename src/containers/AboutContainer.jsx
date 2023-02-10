@@ -17,12 +17,7 @@ import TMLogo from "../img/tm_logo.png";
 import MineNTULogo from "../img/minentu_logo.png";
 import NCNLogo from "../img/ncn_logo.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import {
-  FaDownload,
-  FaTwitter,
-  FaInstagram,
-  FaInstagramSquare,
-} from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { motion } from "framer-motion";
 
