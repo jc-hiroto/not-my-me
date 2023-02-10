@@ -10,7 +10,8 @@ const SectionTitle = ({ base, sup }) => {
     },
     inview: {
       opacity: 1,
-      scale: 1,
+      y: -4,
+      scale: 0.9,
       transition: {
         type: "spring",
         stiffness: 200,
@@ -27,7 +28,7 @@ const SectionTitle = ({ base, sup }) => {
     },
     inview: {
       opacity: 1,
-      y: 5,
+      y: 0,
       transition: {
         type: "spring",
         stiffness: 200,

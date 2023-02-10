@@ -29,16 +29,13 @@ const DevContainer = ({ name }) => {
         h="80%"
         px="8vw"
         m="4"
+        alignItems="center"
         justifyContent="space-evenly"
         flexDirection={isMobile ? "column" : "row"}
         flexWrap="wrap"
       >
         {projects.map((project, index) => {
-          return (
-            <div key={index}>
-              <ProjectCard project={project} index={index} />
-            </div>
-          );
+          return <ProjectCard key={index} project={project} index={index} />;
         })}
       </Flex>
     </Flex>
