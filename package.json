@@ -26,13 +26,11 @@
     "vite-plugin-svgr": "^2.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
     "prettier": "^2.8.4"
   },
   "scripts": {
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

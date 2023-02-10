@@ -21,7 +21,14 @@ function RandomMemoji({ size }) {
   };
   return (
     <motion.div whileTap={{ scale: 0.8, opacity: 0.5 }}>
-      <Image mb={-8} src={image} alt="memoji" boxSize={size} cursor="pointer" onClick={() => handleRandomMemoji()} />
+      <Image
+        mb={-8}
+        src={image}
+        alt="memoji"
+        boxSize={size}
+        cursor="pointer"
+        onClick={() => handleRandomMemoji()}
+      />
     </motion.div>
   );
 }

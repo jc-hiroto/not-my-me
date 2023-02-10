@@ -15,7 +15,7 @@ const SectionTitle = ({ base, sup, animate }) => {
         type: "spring",
         stiffness: 200,
         mass: 1,
-        damping: 10,
+        damping: 12,
         delay: 0.2,
       },
     },
@@ -39,12 +39,30 @@ const SectionTitle = ({ base, sup, animate }) => {
   };
   return (
     <HStack spacing="4" align="end">
-      <Text as={animate ? motion.div : ""} fontSize={["4xl", "5xl", "5xl", "6xl"]} fontWeight="600" color={titleColor}
-            variants={emoji_variants} initial="initial" whileInView="inview" viewport={{ once: true }}>
+      <Text
+        as={animate ? motion.div : ""}
+        fontSize={["4xl", "5xl", "5xl", "6xl"]}
+        fontWeight="600"
+        color={titleColor}
+        variants={emoji_variants}
+        initial="initial"
+        whileInView="inview"
+        viewport={{ once: true }}
+      >
         {sup}
       </Text>
-      <Text as={animate ? motion.div : ""} fontSize={["4xl", "5xl", "5xl", "6xl"]} fontWeight="700" color={titleColor}
-            variants={title_variants} initial="initial" whileInView="inview" viewport={{ once: true }}>{base}</Text>
+      <Text
+        as={animate ? motion.div : ""}
+        fontSize={["4xl", "5xl", "5xl", "6xl"]}
+        fontWeight="700"
+        color={titleColor}
+        variants={title_variants}
+        initial="initial"
+        whileInView="inview"
+        viewport={{ once: true }}
+      >
+        {base}
+      </Text>
     </HStack>
   );
 };
