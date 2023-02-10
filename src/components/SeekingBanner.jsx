@@ -17,7 +17,7 @@ function SeekingBanner() {
     },
   };
   return (
-    <HashLink to="/#contact" smooth>
+    <HashLink smooth to="/#contact">
       <Flex
         as={motion.div}
         variants={variants}
