@@ -169,7 +169,7 @@ const AboutContainer = ({ name }) => {
             <VStack justifyContent="start" alignItems="start">
               {ExpSection(
                 "System Administration Team of NTU CSIE department",
-                CMULogo,
+                NTULogo,
                 "Member of Web Group",
                 "Sep. 2022 - Present",
                 "Teaching Assistant of 18-631 Introduction to Information Security course.",
