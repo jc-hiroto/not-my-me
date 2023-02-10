@@ -1,22 +1,15 @@
 import { useState } from "react";
-import {
-  Flex,
-  HStack,
-  IconButton,
-  Image,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Flex, IconButton, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
 import { FaArrowDown } from "react-icons/fa";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import Footer from "../components/Footer";
-import HeaderBar from "../components/HeaderBar";
-import WelcomeContainer from "../containers/WelcomeContainer";
-import AboutContainer from "../containers/AboutContainer";
-import ContactContainer from "../containers/ContactContainer";
-import DevContainer from "../containers/DevContainer";
-import { HashLink } from "react-router-hash-link";
+import Footer from "@/components/Footer";
+import HeaderBar from "@/components/HeaderBar";
+import WelcomeContainer from "@/containers/WelcomeContainer";
+import AboutContainer from "@/containers/AboutContainer";
+import ContactContainer from "@/containers/ContactContainer";
+import DevContainer from "@/containers/DevContainer";
 
 function HomeContainer() {
   const [isAtPageTop, setIsAtPageTop] = useState(true);

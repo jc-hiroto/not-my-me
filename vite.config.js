@@ -9,6 +9,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "src"),
       "@memoji": path.resolve(__dirname, "src/img/memojis"),
+      "@logo": path.resolve(__dirname, "src/img/logos"),
     },
   },
 });

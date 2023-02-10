@@ -1,6 +1,6 @@
 import { Flex, Text, useColorModeValue, useMediaQuery } from "@chakra-ui/react";
-import RandomMemoji from "../components/RandomMemoji";
-import SeekingBanner from "../components/SeekingBanner";
+import RandomMemoji from "@/components/RandomMemoji";
+import SeekingBanner from "@/components/SeekingBanner";
 
 const WelcomeContainer = ({ name }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");

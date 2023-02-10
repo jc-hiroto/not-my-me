@@ -7,14 +7,11 @@ import {
   useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
-import SectionTitle from "../components/SectionTitle";
-import NTULogo from "../img/ntu_logo.png";
-import CMULogo from "../img/cmu_logo.png";
-import NCNLogo from "../img/ncn_logo.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { motion } from "framer-motion";
+import SectionTitle from "@/components/SectionTitle";
 import {
   ExpText,
   HeadingText,
@@ -24,6 +21,8 @@ import {
   SmallText,
 } from "@/components/Fonts";
 import ExpSection from "@/components/ExpSection";
+import logoNTU from "@logo/ntu.png";
+import logoNCN from "@logo/ncn.png";
 
 const AboutContainer = ({ name }) => {
   const bg_color = useColorModeValue("gray.50", "gray.800");
@@ -153,7 +152,7 @@ const AboutContainer = ({ name }) => {
             <ExpText text="Education" />
             {ExpSection(
               "National Taiwan University",
-              NTULogo,
+              logoNTU,
               "B.S.E in Department of Computer Science & Information Engineering",
               "Sep. 2021 - Present",
               "GPA: 4.14/4.3 ・ Dean’s List Award ・ Taipei, Taiwan",
@@ -169,7 +168,7 @@ const AboutContainer = ({ name }) => {
             <VStack justifyContent="start" alignItems="start">
               {ExpSection(
                 "System Administration Team of NTU CSIE department",
-                NTULogo,
+                logoNTU,
                 "Member of Web Group",
                 "Sep. 2022 - Present",
                 "Teaching Assistant of 18-631 Introduction to Information Security course.",
@@ -178,7 +177,7 @@ const AboutContainer = ({ name }) => {
 
               {ExpSection(
                 "National Taiwan University",
-                NTULogo,
+                logoNTU,
                 "Full Stack Developer",
                 "Jun. 2022 - Aug. 2022",
                 "Worked on next-gen course planning tool at the Office of Academic Affairs of NTU.",
@@ -187,7 +186,7 @@ const AboutContainer = ({ name }) => {
 
               {ExpSection(
                 "NTUCourse Neo Team",
-                NCNLogo,
+                logoNCN,
                 "Co-Founder, Full Stack Developer",
                 "Nov. 2021 - Jun. 2022",
                 "Developed a course planning service for National Taiwan University, which assisted 10000+ students.",
