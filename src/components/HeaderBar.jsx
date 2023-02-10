@@ -161,7 +161,11 @@ function HeaderBar({ isAtPageTop }) {
           whileTap={{ rotate: 180, opacity: 0 }}
           whileHover={{ scale: 1.1 }}
         >
-          <IconButton onClick={toggleColorMode} variant="none">
+          <IconButton
+            aria-label="colorMode"
+            onClick={toggleColorMode}
+            variant="none"
+          >
             {colorMode === "dark" ? (
               <Icon as={BsMoonFill} color="purple.400" boxSize="5" />
             ) : (
