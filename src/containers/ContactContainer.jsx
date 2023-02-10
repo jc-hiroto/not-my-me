@@ -14,7 +14,8 @@ import SectionTitle from "@/components/SectionTitle";
 import memojiContact from "@memoji/contact.png";
 
 const ContactContainer = ({ name }) => {
-  const [isMobile] = useMediaQuery("(max-width: 768 px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  console.log(isMobile);
   return (
     <Flex
       id={name}
@@ -35,7 +36,7 @@ const ContactContainer = ({ name }) => {
         <SectionTitle base="Contact" sup="💬" />
       </Flex>
       <Flex justifyContent="center" alignItems="end" flexDirection="column">
-        <Parallax translateY={isMobile ? [100, -30] : [100, -80]}>
+        <Parallax translateY={isMobile ? [100, -50] : [100, -80]}>
           <Image
             src={memojiContact}
             alt="memoji call me"
@@ -44,7 +45,7 @@ const ContactContainer = ({ name }) => {
         </Parallax>
         <Flex
           p="8"
-          mb="40"
+          mb={isMobile ? "20" : "40"}
           w={["85vw", "85vw", "60vw"]}
           justifyContent="center"
           alignItems="start"
@@ -66,7 +67,7 @@ const ContactContainer = ({ name }) => {
               fontWeight="600"
               color={useColorModeValue("gray.700", "gray.300")}
             >
-              💻 For my coding works...{" "}
+              💻 For my coding works...
             </Text>
             <Button
               mt={isMobile ? "2" : "0"}
@@ -96,7 +97,7 @@ const ContactContainer = ({ name }) => {
               fontWeight="600"
               color={useColorModeValue("gray.700", "gray.300")}
             >
-              💼 For career opportunities...{" "}
+              💼 For career opportunities...
             </Text>
             <Button
               mt={isMobile ? "2" : "0"}
