@@ -11,7 +11,7 @@ function App() {
       <Route
         path="/resume"
         element={
-          <ResumeDownloadContainer url="https://github.com/jc-hiroto/me/raw/master/public/po_hao_chang_resume.pdf" />
+          <ResumeDownloadContainer url="https://github.com/weitude/me/raw/main/public/chia_wei_lin_resume.pdf" />
         }
       />
       <Route
@@ -19,7 +19,7 @@ function App() {
         element={
           <RedirectContainer
             title="LinkedIn"
-            url="https://linkedin.com/in/jc-hiroto"
+            url="https://linkedin.com/in/ericcwlin"
           />
         }
       />

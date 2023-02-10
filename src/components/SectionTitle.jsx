@@ -1,7 +1,7 @@
 import { HStack, Text, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-const SectionTitle = ({ base, sup, animate }) => {
+const SectionTitle = ({ base, sup }) => {
   const titleColor = useColorModeValue("gray.600", "gray.300");
   const emoji_variants = {
     initial: {
@@ -38,9 +38,9 @@ const SectionTitle = ({ base, sup, animate }) => {
     },
   };
   return (
-    <HStack spacing="4" align="end">
+    <HStack mt="4" spacing="4">
       <Text
-        as={animate ? motion.div : ""}
+        as={motion.div}
         fontSize={["4xl", "5xl", "5xl", "6xl"]}
         fontWeight="600"
         color={titleColor}
@@ -52,7 +52,7 @@ const SectionTitle = ({ base, sup, animate }) => {
         {sup}
       </Text>
       <Text
-        as={animate ? motion.div : ""}
+        as={motion.div}
         fontSize={["4xl", "5xl", "5xl", "6xl"]}
         fontWeight="700"
         color={titleColor}

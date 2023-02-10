@@ -39,7 +39,7 @@ function SeekingBanner() {
           👀
         </Text>
         <Text fontSize={["md", "2xl"]} fontWeight="700" color="gray.100">
-          Seeking 2023 SWE Intern @ Bay Area
+          Seeking 2023 SWE Intern @ Taiwan
         </Text>
       </Flex>
     </HashLink>
