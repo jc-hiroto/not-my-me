@@ -152,12 +152,9 @@ const AboutContainer = ({ name }) => {
             >
               A proficient
               <chakra.span color={useColorModeValue("gray.700", "gray.300")}>
-                {" "}
-                Taiwanese 🇹🇼{" "}
+                Taiwanese 🇹🇼
               </chakra.span>
               developer.
-              {/* based in the
-              <chakra.span color={useColorModeValue("gray.700", "gray.300")}> Bay Area 🇺🇸</chakra.span>.*/}
             </Text>
             <Text
               mb="4"
@@ -168,17 +165,14 @@ const AboutContainer = ({ name }) => {
             >
               I am experienced in
               <chakra.span color={useColorModeValue("gray.700", "gray.300")}>
-                {" "}
                 DevOps
               </chakra.span>
               ,
               <chakra.span color={useColorModeValue("gray.700", "gray.300")}>
-                {" "}
                 Full Stack Development
               </chakra.span>
               , and
               <chakra.span color={useColorModeValue("gray.700", "gray.300")}>
-                {" "}
                 Cyber Security
               </chakra.span>
               .
