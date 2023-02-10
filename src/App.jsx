@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomeContainer from "@/containers/HomeContainer";
 import NotFoundContainer from "@/containers/NotFoundContainer";
-import ResumeDownloadContainer from "@/containers/resumeDownloadContainer";
 import RedirectContainer from "@/containers/redirectContainer";
+import ResumeDownloadContainer from "@/containers/resumeDownloadContainer";
 
 function App() {
   return (
