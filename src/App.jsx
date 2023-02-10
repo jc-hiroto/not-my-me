@@ -26,18 +26,15 @@ function App() {
       <Route
         path="/github"
         element={
-          <RedirectContainer
-            title="GitHub"
-            url="https://github.com/jc-hiroto"
-          />
+          <RedirectContainer title="GitHub" url="https://github.com/weitude" />
         }
       />
       <Route
-        path="/twitter"
+        path="/instagram"
         element={
           <RedirectContainer
-            title="Twitter"
-            url="https://twitter.com/jc_hiroto_"
+            title="Instagram"
+            url="https://www.instagram.com/5a.0401/"
           />
         }
       />

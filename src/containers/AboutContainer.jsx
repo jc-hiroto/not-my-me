@@ -1,10 +1,8 @@
 import {
-  Avatar,
   Flex,
   HStack,
   Icon,
   Link,
-  Tag,
   Text,
   useColorModeValue,
   VStack,
@@ -12,8 +10,6 @@ import {
 import SectionTitle from "../components/SectionTitle";
 import NTULogo from "../img/ntu_logo.png";
 import CMULogo from "../img/cmu_logo.png";
-import TMLogo from "../img/tm_logo.png";
-import MineNTULogo from "../img/minentu_logo.png";
 import NCNLogo from "../img/ncn_logo.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
@@ -124,7 +120,7 @@ const AboutContainer = ({ name }) => {
                   <SmallText text="Save my resume" />
                 </HStack>
               </Link>
-              <Link href="twitter" isExternal>
+              <Link href="instagram" isExternal>
                 <HStack spacing="2">
                   <Icon
                     as={AiFillInstagram}
