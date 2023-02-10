@@ -14,11 +14,13 @@ import m9 from "@memoji/m9.png";
 
 function RandomMemoji({ size }) {
   const [image, setImage] = React.useState(m1);
+  const [index, setIndex] = React.useState(1);
   const memojis = [m1, m2, m3, m4, m5, m6, m7, m8, m9];
   const handleRandomMemoji = () => {
-    const random = Math.floor(Math.random() * 8);
-    setImage(memojis[random]);
+    setIndex((index + 1) % 9);
+    setImage(memojis[index]);
   };
+
   return (
     <motion.div whileTap={{ scale: 0.8, opacity: 0.5 }}>
       <Image
