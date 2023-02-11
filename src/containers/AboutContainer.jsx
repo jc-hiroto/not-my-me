@@ -167,20 +167,19 @@ const AboutContainer = ({ name }) => {
             <ExpText text="Experience" />
             <VStack justifyContent="start" alignItems="start">
               {ExpSection(
+                "National Taiwan University",
+                logoNTU,
+                "Backend Engineer Intern",
+                "Nov. 2022 - Present",
+                "Worked on next-gen course planning tool at the Office of Academic Affairs of NTU.",
+              )}
+              <ThreeDot />
+              {ExpSection(
                 "System Administration Team of NTU CSIE department",
                 logoNTU,
                 "Member of Web Group",
                 "Sep. 2022 - Present",
-                "Teaching Assistant of 18-631 Introduction to Information Security course.",
-              )}
-              <ThreeDot />
-
-              {ExpSection(
-                "National Taiwan University",
-                logoNTU,
-                "Full Stack Developer",
-                "Jun. 2022 - Aug. 2022",
-                "Worked on next-gen course planning tool at the Office of Academic Affairs of NTU.",
+                "In charge of maintaining the KVM, reverse proxy... of our department",
               )}
               <ThreeDot />
 

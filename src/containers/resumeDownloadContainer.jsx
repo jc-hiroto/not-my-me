@@ -57,7 +57,7 @@ function ResumeDownloadContainer({ url }) {
           colorScheme="blue"
           leftIcon={<FaArrowLeft />}
           onClick={() => {
-            navigate(-1);
+            navigate("/");
           }}
         >
           Go Back

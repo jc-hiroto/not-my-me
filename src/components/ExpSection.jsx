@@ -18,6 +18,7 @@ const ExpSection = (name, logo, position, time, desc) => {
       />
       <Flex flexDirection="column" justifyContent="start" alignItems="start">
         <Text
+          mb="1"
           fontSize={["xl", "xl", "2xl"]}
           fontWeight="700"
           color={useColorModeValue("gray.800", "gray.200")}

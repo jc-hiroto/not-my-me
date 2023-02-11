@@ -39,7 +39,7 @@ function NotFoundContainer() {
           colorScheme="blue"
           leftIcon={<FaArrowLeft />}
           onClick={() => {
-            navigate(-2);
+            navigate("/");
           }}
         >
           Go Back

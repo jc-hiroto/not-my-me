@@ -15,7 +15,6 @@ import memojiContact from "@memoji/contact.png";
 
 const ContactContainer = ({ name }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
-  console.log(isMobile);
   return (
     <Flex
       id={name}
