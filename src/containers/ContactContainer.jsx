@@ -44,7 +44,7 @@ const ContactContainer = ({ name }) => {
         </Parallax>
         <Flex
           p="8"
-          mb={isMobile ? "20" : "40"}
+          mb={isMobile ? "10" : "40"}
           w={["85vw", "85vw", "60vw"]}
           justifyContent="center"
           alignItems="start"

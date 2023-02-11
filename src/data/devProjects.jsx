@@ -15,22 +15,17 @@ const projects = [
       {
         emoji: "💪",
         content:
-          "Assisted 5000+ students in course planning and gained 1500+ registered users.",
+          "Assisted 5000+ students in course planning with intuitive user experience.",
       },
       {
         emoji: "🔐",
         content:
-          "Defined RESTful API specification and implemented JWT authorization with Auth0 service. ",
+          "Improved information security through implementing JWT authorization with SSO service.",
       },
       {
         emoji: "⚡️",
         content:
-          "Implemented serverless functions to parse waitlist data from the official course registration system.",
-      },
-      {
-        emoji: "🤝",
-        content:
-          "Acquired by Office of Academic Affairs of National Taiwan University in Q3 2022.",
+          "Decreased data complexity by refactoring Prisma schema and migrating with Postgres database.",
       },
     ],
     profession: ["Node.js", "React", "MongoDB", "PGSQL"],
@@ -42,7 +37,7 @@ const projects = [
       },
       {
         title: "Website",
-        link: "https://course.myntu.me",
+        link: "https://course.ntu.edu.tw/",
         icon: <FaGlobeAmericas />,
       },
     ],
