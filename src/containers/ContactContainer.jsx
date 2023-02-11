@@ -76,7 +76,7 @@ const ContactContainer = ({ name }) => {
               color="white"
               bg="gray.700"
               _hover={{ bg: "gray.200", color: "gray.600" }}
-              onClick={() => window.open("github", "_blank")}
+              onClick={() => window.open("/#/github", "_blank")}
             >
               GitHub
             </Button>
@@ -106,7 +106,7 @@ const ContactContainer = ({ name }) => {
               color="white"
               bg="blue.600"
               _hover={{ bg: "gray.200", color: "gray.600" }}
-              onClick={() => window.open("linkedin", "_blank")}
+              onClick={() => window.open("/#/linkedin", "_blank")}
             >
               LinkedIn
             </Button>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Flex, IconButton, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
@@ -17,6 +17,10 @@ function HomeContainer() {
   useScrollPosition(({ prevPos, currPos }) => {
     setIsAtPageTop(currPos.y === 0);
   });
+
+  useEffect(() => {
+    window.location.href = "/#/";
+  }, []);
 
   return (
     <Flex

@@ -109,7 +109,7 @@ const AboutContainer = ({ name }) => {
               <HighlightText text=" JavaScript" />.
             </NormalText>
             <HStack mt="8" spacing={["8", "16"]}>
-              <Link href="resume">
+              <Link href="/#/resume">
                 <HStack spacing="2">
                   <Icon
                     as={FaDownload}
@@ -119,7 +119,7 @@ const AboutContainer = ({ name }) => {
                   <SmallText text="Save my resume" />
                 </HStack>
               </Link>
-              <Link href="instagram" isExternal>
+              <Link href="/#/instagram" isExternal>
                 <HStack spacing="2">
                   <Icon
                     as={AiFillInstagram}

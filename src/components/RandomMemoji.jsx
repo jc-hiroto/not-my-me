@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -13,8 +13,8 @@ import m8 from "@memoji/m8.png";
 import m9 from "@memoji/m9.png";
 
 function RandomMemoji({ size }) {
-  const [image, setImage] = React.useState(m1);
-  const [index, setIndex] = React.useState(1);
+  const [image, setImage] = useState(m1);
+  const [index, setIndex] = useState(1);
   const memojis = [m1, m2, m3, m4, m5, m6, m7, m8, m9];
   const handleRandomMemoji = () => {
     setIndex((index + 1) % 9);

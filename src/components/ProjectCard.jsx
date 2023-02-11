@@ -1,4 +1,5 @@
-import React from "react";
+import { useState } from "react";
+
 import {
   Badge,
   Button,
@@ -15,7 +16,7 @@ import { motion } from "framer-motion";
 import { FaReply } from "react-icons/fa";
 
 function ProjectCard({ project, index }) {
-  const [isSelected, setIsSelected] = React.useState(false);
+  const [isSelected, setIsSelected] = useState(false);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const bgColor = useColorModeValue("gray.50", "gray.800");
   const btnColor = useColorModeValue("gray.500", "gray.700");
@@ -283,4 +284,5 @@ function ProjectCard({ project, index }) {
     </Flex>
   );
 }
+
 export default ProjectCard;
