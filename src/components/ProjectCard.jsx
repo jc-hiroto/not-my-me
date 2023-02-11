@@ -59,11 +59,11 @@ function ProjectCard({ project, index }) {
       <>
         <Image
           w="100%"
+          h={isMobile ? "200px" : "250px"}
           key={"card_front_img+" + index}
           fit="cover"
-          maxH="200px"
           src={img}
-          alt={"Image of " + name}
+          alt={"Image of " + title}
           borderTopLeftRadius="xl"
           borderTopRightRadius="xl"
         />
@@ -98,7 +98,7 @@ function ProjectCard({ project, index }) {
             >
               {period}
             </Tag>
-            <HStack mb="4" spacing={2}>
+            <Flex mb="4" gap="2" flexWrap="wrap">
               {profession.map((prof, index) => {
                 return (
                   <Badge
@@ -111,7 +111,7 @@ function ProjectCard({ project, index }) {
                   </Badge>
                 );
               })}
-            </HStack>
+            </Flex>
             <Text
               mb="8"
               fontSize={["md", "md"]}
@@ -253,13 +253,13 @@ function ProjectCard({ project, index }) {
   return (
     <Flex
       as={motion.div}
-      w={isMobile ? "91%" : "25vw"}
-      minW={isMobile ? "91%" : "400px"}
-      h={isMobile ? "" : "450px"}
+      w={isMobile ? "90%" : "25vw"}
+      minW={isMobile ? "90%" : "400px"}
+      h="500px"
       my="4"
       mx={isMobile ? "0" : "4"}
       key={index}
-      justifyContent="end"
+      justifyContent="center"
       flexDirection="column"
       bg={bgColor}
       borderRadius="xl"

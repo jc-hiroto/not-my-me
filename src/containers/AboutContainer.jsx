@@ -23,6 +23,8 @@ import {
 import ExpSection from "@/components/ExpSection";
 import logoNTU from "@logo/ntu.png";
 import logoNCN from "@logo/ncn.png";
+import logoNASA from "@logo/nasa.png";
+import logoRelief from "@logo/relief.png";
 
 const AboutContainer = ({ name }) => {
   const bg_color = useColorModeValue("gray.50", "gray.800");
@@ -138,7 +140,7 @@ const AboutContainer = ({ name }) => {
           pt="16"
           pb="32"
           px={{ base: "8", md: "16", xl: "36" }}
-          flexDirection="row"
+          flexDirection="column"
           justifyContent={{ base: "space-between" }}
           bg={bg_color}
           flexWrap="wrap"
@@ -167,8 +169,8 @@ const AboutContainer = ({ name }) => {
             <ExpText text="Experience" />
             <VStack justifyContent="start" alignItems="start">
               {ExpSection(
-                "National Taiwan University",
-                logoNTU,
+                "NTUCourse Neo Team",
+                logoNCN,
                 "Backend Engineer Intern",
                 "Nov. 2022 - Present",
                 "Worked on next-gen course planning tool at the Office of Academic Affairs of NTU.",
@@ -176,19 +178,18 @@ const AboutContainer = ({ name }) => {
               <ThreeDot />
               {ExpSection(
                 "System Administration Team of NTU CSIE department",
-                logoNTU,
+                logoNASA,
                 "Member of Web Group",
                 "Sep. 2022 - Present",
-                "In charge of maintaining the KVM, reverse proxy... of our department",
+                "In charge of maintaining the KVM, reverse proxy... of NTU CSIE department.",
               )}
               <ThreeDot />
-
               {ExpSection(
-                "NTUCourse Neo Team",
-                logoNCN,
+                "NTU Relief Team",
+                logoRelief,
                 "Co-Founder, Full Stack Developer",
-                "Nov. 2021 - Jun. 2022",
-                "Developed a course planning service for National Taiwan University, which assisted 10000+ students.",
+                "Oct. 2022 - Jun. 2023",
+                "Developed a user-friendly website for helping people who have similar emotional problems to ask",
               )}
             </VStack>
           </Flex>
