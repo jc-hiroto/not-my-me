@@ -11,9 +11,10 @@ import {
 import { FaCodeBranch, FaEnvelope, FaGithub } from "react-icons/fa";
 
 function Footer() {
-  const version = "build 20230210";
+  const version = "build 20230215";
   const text_color = useColorModeValue("gray.400", "gray.600");
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  console.log("test");
   if (isMobile) {
     return (
       <Flex
