@@ -11,7 +11,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Parallax } from "react-scroll-parallax";
 import SeekingBanner from "@/components/SeekingBanner";
 import SectionTitle from "@/components/SectionTitle";
-import memojiContact from "@memoji/contact.png";
+import memojiContact from "@memoji/contact.webp";
 
 const ContactContainer = ({ name }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");

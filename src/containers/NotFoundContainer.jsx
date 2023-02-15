@@ -2,7 +2,7 @@ import { Button, Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
-import memoji404 from "@memoji/404.png";
+import memoji404 from "@memoji/404.webp";
 
 function NotFoundContainer() {
   const navigate = useNavigate();

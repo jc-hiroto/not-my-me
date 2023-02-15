@@ -21,10 +21,10 @@ import {
   SmallText,
 } from "@/components/Fonts";
 import ExpSection from "@/components/ExpSection";
-import logoNTU from "@logo/ntu.png";
-import logoNCN from "@logo/ncn.png";
-import logoNASA from "@logo/nasa.png";
-import logoRelief from "@logo/relief.png";
+import logoNTU from "@logo/ntu.webp";
+import logoNCN from "@logo/ncn.webp";
+import logoNASA from "@logo/nasa.webp";
+import logoRelief from "@logo/relief.webp";
 
 const AboutContainer = ({ name }) => {
   const bg_color = useColorModeValue("gray.50", "gray.800");

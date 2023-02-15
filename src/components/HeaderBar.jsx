@@ -18,7 +18,7 @@ import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { FaBars, FaDownload } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import memojiWink from "@memoji/wink.png";
+import memojiWink from "@memoji/wink.webp";
 
 function HeaderBar({ isAtPageTop }) {
   const { colorMode, toggleColorMode } = useColorMode();

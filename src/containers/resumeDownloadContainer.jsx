@@ -9,7 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import Footer from "@/components/Footer";
-import memojiResume from "@memoji/resume.png";
+import memojiResume from "@memoji/resume.webp";
 
 function ResumeDownloadContainer({ url }) {
   const navigate = useNavigate();

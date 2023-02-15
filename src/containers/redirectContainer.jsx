@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Footer from "@/components/Footer";
-import memojiWaiting from "@memoji/waiting.png";
+import memojiWaiting from "@memoji/waiting.webp";
 
 function RedirectContainer({ url, title }) {
   window.location.replace(url);
