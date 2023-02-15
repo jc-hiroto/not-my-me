@@ -1,9 +1,4 @@
-import {
-  FaFile,
-  FaGithub,
-  FaGlobeAmericas,
-  FaInfoCircle,
-} from "react-icons/fa";
+import { FaGithub, FaGlobeAmericas } from "react-icons/fa";
 
 const projects = [
   {
