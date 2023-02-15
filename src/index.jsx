@@ -10,11 +10,9 @@ import theme from "@/theme";
 // ReactGA.send("pageview");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ParallaxProvider>
-        <App />
-      </ParallaxProvider>
-    </ChakraProvider>
-  </React.StrictMode>,
+  <ChakraProvider theme={theme}>
+    <ParallaxProvider>
+      <App />
+    </ParallaxProvider>
+  </ChakraProvider>,
 );
