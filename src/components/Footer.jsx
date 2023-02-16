@@ -11,7 +11,7 @@ import {
 import { FaCodeBranch, FaEnvelope, FaGithub } from "react-icons/fa";
 
 function Footer() {
-  const version = "build 20230215";
+  const version = "build 20230216";
   const text_color = useColorModeValue("gray.400", "gray.600");
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
@@ -80,11 +80,11 @@ function Footer() {
       flexDirection="row"
     >
       <HStack>
-        <Link href="." _hover={{ textDecoration: "none" }}>
-          <Text mr="4" fontSize="lg" fontWeight="600" color={text_color}>
+        <Text mr="4" fontSize="lg" fontWeight="600" color="gray.400">
+          <Link href="https://weitude.tech/" isExternal>
             weitude.tech
-          </Text>
-        </Link>
+          </Link>
+        </Text>
         <HStack>
           <Icon as={FaCodeBranch} boxSize="3" color={text_color} />
           <Text fontSize="12" fontWeight="500" color={text_color}>
