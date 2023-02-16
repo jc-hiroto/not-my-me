@@ -13,7 +13,7 @@ import memojiResume from "@memoji/resume.webp";
 
 function ResumeDownloadContainer({ url }) {
   const navigate = useNavigate();
-  window.location.replace(url);
+  window.location.href = url;
   return (
     <Flex
       flexDirection="column"

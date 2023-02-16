@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import memojiWaiting from "@memoji/waiting.webp";
 
 function RedirectContainer({ url, title }) {
-  window.location.replace(url);
+  window.location.href = url;
   return (
     <Flex
       flexDirection="column"
