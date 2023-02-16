@@ -33,6 +33,7 @@ const DevContainer = ({ name }) => {
         justifyContent="space-evenly"
         flexDirection={isMobile ? "column" : "row"}
         flexWrap="wrap"
+        gap="5"
       >
         {projects.map((project, index) => {
           return <ProjectCard key={index} project={project} index={index} />;
