@@ -26,7 +26,6 @@ const DevContainer = ({ name }) => {
       </Flex>
       <Flex
         w="100%"
-        h="80%"
         px="8vw"
         m="4"
         alignItems="center"

@@ -70,13 +70,15 @@ function ProjectCard({ project, index }) {
         <Flex
           mx="4"
           my="4"
+          h="250px"
           key={index}
-          justifyContent="space-between"
+          justifyContent="space-evenly"
           alignItems="start"
           flexDirection="column"
         >
           <Flex
             w="100%"
+            h="190px"
             key={index}
             justifyContent="start"
             alignItems="start"
@@ -113,7 +115,6 @@ function ProjectCard({ project, index }) {
               })}
             </Flex>
             <Text
-              mb="8"
               fontSize={["md", "md"]}
               fontWeight="500"
               color={{ titleColor }}
@@ -148,85 +149,78 @@ function ProjectCard({ project, index }) {
   };
   const backContent = () => {
     return (
-      <>
-        <Flex
-          w="100%"
-          h="100%"
-          px="6"
-          py="6"
-          key={index}
-          justifyContent="space-between"
-          alignItems="start"
-          flexDirection="column"
-        >
-          <Flex
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="start"
+      <Flex
+        w="100%"
+        h="100%"
+        p="6"
+        key={index}
+        justifyContent="space-between"
+        alignItems="start"
+        flexDirection="column"
+      >
+        <Flex flexDirection="column" justifyContent="center" alignItems="start">
+          <Text fontWeight="500" color="gray.500">
+            Know more about...
+          </Text>
+          <Text
+            fontSize={["xl", "xl", "2xl"]}
+            fontWeight="800"
+            color={{ titleColor }}
           >
-            <Text fontWeight="500" color="gray.500">
-              Know more about...
-            </Text>
-            <Text
-              fontSize={["xl", "xl", "2xl"]}
-              fontWeight="800"
-              color={{ titleColor }}
-            >
-              {title}
-            </Text>
-            <Flex
-              w="100%"
-              h="300px"
-              py="2"
-              justifyContent="start"
-              alignItems="start"
-              flexDirection="column"
-              overflow="auto"
-            >
-              {info.map((info, index) => {
-                return (
-                  <HStack key={"info_stack_" + index} my="2" spacing="3">
-                    <Text
-                      key={"info_emoji_" + index}
-                      fontSize="3xl"
-                      fontWeight="500"
-                      color={{ titleColor }}
-                    >
-                      {info.emoji}
-                    </Text>
-                    <Text
-                      key={"info_content_" + index}
-                      fontSize="sm"
-                      fontWeight="500"
-                      color={{ titleColor }}
-                    >
-                      {info.content}
-                    </Text>
-                  </HStack>
-                );
-              })}
-            </Flex>
-          </Flex>
-          <Flex w="100%" flexWrap="wrap" alignItems="center" gap="2">
-            {btns.map((btn, i) => {
+            {title}
+          </Text>
+          <Flex
+            w="100%"
+            h="300px"
+            py="2"
+            justifyContent="start"
+            alignItems="start"
+            flexDirection="column"
+            overflow="auto"
+          >
+            {info.map((info, index) => {
               return (
-                <Button
-                  key={i}
-                  size="sm"
-                  fontSize={["xs", "sm"]}
-                  leftIcon={btn.icon}
-                  color="white"
-                  bg={btnColor}
-                  _hover={{ bg: "gray.600" }}
-                  onClick={() => window.open(btn.link, "_blank")}
-                >
-                  {btn.title}
-                </Button>
+                <HStack key={"info_stack_" + index} my="2" spacing="3">
+                  <Text
+                    key={"info_emoji_" + index}
+                    fontSize="3xl"
+                    fontWeight="500"
+                    color={{ titleColor }}
+                  >
+                    {info.emoji}
+                  </Text>
+                  <Text
+                    key={"info_content_" + index}
+                    fontSize="sm"
+                    fontWeight="500"
+                    color={{ titleColor }}
+                  >
+                    {info.content}
+                  </Text>
+                </HStack>
               );
             })}
           </Flex>
         </Flex>
-      </>
+        <Flex w="100%" flexWrap="wrap" alignItems="center" gap="2">
+          {btns.map((btn, i) => {
+            return (
+              <Button
+                key={i}
+                size="sm"
+                fontSize={["xs", "sm"]}
+                leftIcon={btn.icon}
+                color="white"
+                bg={btnColor}
+                _hover={{ bg: "gray.600" }}
+                onClick={() => window.open(btn.link, "_blank")}
+              >
+                {btn.title}
+              </Button>
+            );
+          })}
+        </Flex>
+      </Flex>
     );
   };
   const variants = {
@@ -253,8 +247,7 @@ function ProjectCard({ project, index }) {
   return (
     <Flex
       as={motion.div}
-      w={isMobile ? "90%" : "25vw"}
-      minW={isMobile ? "90%" : "400px"}
+      w={isMobile ? "300px" : "400px"}
       h="500px"
       my="4"
       mx={isMobile ? "0" : "4"}
