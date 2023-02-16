@@ -9,6 +9,7 @@ import {
   MenuItem,
   MenuList,
   Text,
+  Link,
   useColorMode,
   useColorModeValue,
   useMediaQuery,
@@ -17,7 +18,7 @@ import { motion } from "framer-motion";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { FaBars, FaDownload } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import memojiWink from "@memoji/wink.webp";
 
 function HeaderBar({ isAtPageTop }) {
@@ -73,7 +74,7 @@ function HeaderBar({ isAtPageTop }) {
                 </HashLink>
               );
             })}
-            <Link to="resume">
+            <Link href="/#/resume" isExternal>
               <MenuItem _focus={{ boxShadow: "none" }}>
                 <HStack>
                   <Text fontSize="md" fontWeight="600">
@@ -142,7 +143,7 @@ function HeaderBar({ isAtPageTop }) {
             </HashLink>
           );
         })}
-        <Link to="resume">
+        <Link href="/#/resume" isExternal>
           <HStack>
             <Text
               fontSize="md"

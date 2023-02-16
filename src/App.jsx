@@ -2,7 +2,6 @@ import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import HomeContainer from "@/containers/HomeContainer";
 import NotFoundContainer from "@/containers/NotFoundContainer";
 import RedirectContainer from "@/containers/redirectContainer";
-import ResumeDownloadContainer from "@/containers/resumeDownloadContainer";
 
 function App() {
   return (
@@ -12,7 +11,10 @@ function App() {
         <Route
           path="/resume"
           element={
-            <ResumeDownloadContainer url="https://github.com/weitude/me/raw/main/public/chia_wei_lin_resume.pdf" />
+            <RedirectContainer
+              title="Resume"
+              url="https://weitude.tech/chia_wei_lin_resume.pdf"
+            />
           }
         />
         <Route

@@ -111,7 +111,7 @@ const AboutContainer = ({ name }) => {
               <HighlightText text=" JavaScript" />.
             </NormalText>
             <HStack mt="8" spacing={["8", "16"]}>
-              <Link href="/#/resume">
+              <Link href="/#/resume" isExternal>
                 <HStack spacing="2">
                   <Icon
                     as={FaDownload}

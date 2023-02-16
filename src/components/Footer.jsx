@@ -81,9 +81,7 @@ function Footer() {
     >
       <HStack>
         <Text mr="4" fontSize="lg" fontWeight="600" color="gray.400">
-          <Link href="https://weitude.tech/" isExternal>
-            weitude.tech
-          </Link>
+          <Link href=".">weitude.tech</Link>
         </Text>
         <HStack>
           <Icon as={FaCodeBranch} boxSize="3" color={text_color} />
